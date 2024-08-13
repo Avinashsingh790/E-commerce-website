@@ -1,0 +1,205 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:rgba(128, 128, 128, 0.006);
+  color: #100101;
+  padding: 10px 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#logo
+{
+  width: 5%;
+
+}
+
+#logo:hover
+{
+  width: 12%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+  width:80%;
+  justify-content: space-around;
+}
+
+.nav-item {
+  margin-left: 20px;
+  padding: 5px 5px 5px 5px;
+  cursor: pointer;
+  
+}
+
+.nav-item:hover
+{
+  background-color: aqua;
+  font-size: 20px;
+  
+}
+
+
+
+.mobile-view {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  color: #090808;
+  padding: 10px 0;
+  height: auto;
+  margin: 5% 5% 5% 5%;
+
+  
+}
+
+
+
+.mobile-nav-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+}
+
+#dom 
+{
+  background-color: red;
+ display: flex;
+ justify-content: center;
+}
+
+
+
+/*container */
+
+#container
+{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+img
+{
+  width: 80%;
+}
+
+.items
+{
+  padding: 20px;
+}
+
+img:hover
+{
+  width : 90%;
+}
+
+#container-2
+{
+  display: flex;
+  justify-content: space-around;
+  margin-right: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+
+
+
+
+
+
+#footer
+{
+  margin-top: 150px;
+  font-weight: 10px;
+}
+
+#cp
+{
+  background-color: #090808;
+  font-size: 15px;
+  color: azure;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+
+@media only screen and (max-width: 640px) {
+  .nav-item {
+      display: none;
+      background-color: #090808;
+  }
+
+  .nav{
+    background-color: #090808;
+    padding: 0px 32px 0px 0px;
+  }
+
+  .mobile-view {
+     display: flex;
+     padding: 5px;
+  }
+
+  .mobile-view:hover
+  {
+    background-color: aqua ;
+    font-size: 20px;
+  }
+
+  #logo
+  {
+    width: 10%;
+  }
+
+  .nav{
+    width: 5%;
+  }
+
+
+/*container */
+  
+
+
+  #container
+  {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+  }
+
+  #container-2
+  {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+  }
+
+  .items
+  {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+  }
+
+
+
+}

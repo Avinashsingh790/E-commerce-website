@@ -1,0 +1,195 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:rgba(128, 128, 128, 0.006);
+  color: #100101;
+  padding: 10px 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#logo
+{
+  width: 5%;
+
+}
+
+#logo:hover
+{
+  width: 12%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+  width:80%;
+  justify-content: space-around;
+}
+
+.nav-item {
+  margin-left: 20px;
+  padding: 5px 5px 5px 5px;
+  cursor: pointer;
+  
+}
+
+.nav-item:hover
+{
+  background-color: aqua;
+  font-size: 20px;
+  
+}
+
+
+
+.mobile-view {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  color: #090808;
+  padding: 10px 0;
+  height: auto;
+  margin: 5% 5% 5% 5%; 
+}
+
+
+
+.mobile-nav-item {
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+}
+
+#dom 
+{
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+
+
+/*items*/
+
+
+
+.containers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 40px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#container-1, #container-2, #container-3, #container-4, #container-5, #container-6, #container-7, #container-8, #container-9 ,#container-10 ,#container-11 ,#container-12 {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Kids-items img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.cut-half {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 10px;
+}
+
+p {
+  color: #4caf50;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.button {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.add {
+  background-color: #4caf50;
+  color: white;
+  
+}
+
+button.buy {
+  background-color: #ff3b3b;
+  color: white;
+}
+
+
+
+
+@media only screen and (max-width: 640px) {
+  .nav-item {
+      display: none;
+      background-color: #090808;
+  }
+
+  .nav{
+    background-color: #090808;
+    padding: 0px 8px 0px 0px;
+  }
+
+  .mobile-view {
+     display: flex;
+     padding: 5px;
+  }
+
+  .mobile-view:hover
+  {
+    background-color: aqua ;
+    font-size: 20px;
+  }
+
+  #logo
+  {
+    width: 10%;
+  }
+
+  #logo:hover{
+    width: 12%;
+  }
+
+  .nav{
+    width: 5%;
+  }
+
+  .containers {
+    grid-template-columns: 1fr;
+}
+}
