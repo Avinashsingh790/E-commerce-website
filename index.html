@@ -4,80 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <link rel="stylesheet" href="index.css">
 
-    <title>V-Mart</title>
+    <title>SinghMART</title>
 </head>
 
 <body>
 
-    <div class="header">
-
-       <img src="./products/v-mart.png" alt="logo" id="logo"> 
-
-        <div class="nav">
-
-
-
-            <a href="index.html"> <div class="nav-item">Home</div> </a>
-            <div class="nav-item">About</div>
-            <div class="nav-item">Contact</div>
-            <div class="nav-item">Store</div>
-            <div class="nav-item">Products</div>
-            <div class="nav-item">SHOP WITH US</div>
-            <div class="mobile-view">
-
-                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                    fill="#e8eaed" id="menu-icon">
-                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                </svg>
+    <header class="header">
+        <a href="index.html" class="logo-link">
+            <img id="logo" src="./products/images.jpeg" alt="Logo">
+        </a>
+        <nav class="nav">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="products.html" class="nav-item">Products</a>
+            <a href="about.html" class="nav-item">About Us</a>
+            <a href="contact.html" class="nav-item">Contact</a>
+        </nav>
+        <div class="nav-icons">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="search-button">
+                    <i class="fa fa-search"></i>
+                </button>
             </div>
+          
+            <a href="profile.html" class="nav-icon">
+                <i class="fa fa-user"></i> 
+            </a>
+            <a href="cart.html" class="nav-icon">
+                <i class="fa fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </a>
+            
         </div>
-    </div>
+    </header>
+    
 
-
-
-    <div class="mobile-menu" id="mobile-menu">
-
-        <a href="index.html"> <div class="mobile-view">Home</div>  </a>
-        <div class="mobile-view">About</div>
-        <div class="mobile-view">Contact</div>
-        <div class="mobile-view">Store</div>
-        <div class="mobile-view">Products</div>
-        <div class="mobile-view">SHOP WITH US</div>
-    </div>
-
-
-    <p id="dom">Creating Value fashion For India</p>
-
-
-    <div id="container">
+    <br>
+      
+     <p id="dom">Creating Value fashion For India</p>
+    
+     <br>
+     
+    
+    
+     <div id="container">
 
 
         <div class="items">
-           <a href="mens.html"> <img src="./products/mens.jpg" alt="Mens-Clothing" > </a>
+           <a href="mens.html"> <img src="./products/men.webp" alt="Mens-Clothing" > </a>
             <h2>Mens-clothing</h2>
         </div>
 
 
         <div class="items">
-           <a href="girls.html"> <img src="./products/g.jpg" alt="Girls-Clothing" > </a>
+           <a href="girls.html"> <img src="./products/women.webp" alt="Girls-Clothing" > </a>
             <h2>Girls-Clothing</h2>
         </div>
 
 
         <div class="items">
-           <a href="kids.html"> <img src="./products/kids.webp" alt="#" > </a>
+           <a href="kids.html"> <img src="./products/kid.webp" alt="#" > </a>
             <h2>Kids-clothing</h2>
         </div>
 
 
         <div class="items">
-           <a href="home.html"> <img src="./products/home.jpg" alt="#" > </a>
+           <a href="home.html"> <img src="./products/homedecor.webp" alt="#" > </a>
             <h2>Home-appliances</h2>
         </div>
 
@@ -86,24 +85,23 @@
 
 
     <div id="container-2">
-        
+    
         <div class="items">
-            <img src="./products/elec.jpeg" alt="#" >
-            <h2>Electrion</h2>
-        </div>
-
-
-        <div class="items">
-            <img src="./products/bags.jpeg" alt="#" >
+            <img src="./products/bag.webp" alt="#" >
             <h2>Bags</h2>
         </div>
 
 
         <div class="items">
-            <img src="./products/skins.jpeg" alt="#" >
+            <img src="./products/skincare.webp" alt="#" >
             <h2>Skin-Care</h2>
         </div>
 
+
+        <div class="items">
+            <img src="./products/electronics.webp" alt="#" >
+            <h2>Electronics</h2>
+        </div>
 
         <div class="items">
             <img src="./products/phone.webp" alt="#" >
